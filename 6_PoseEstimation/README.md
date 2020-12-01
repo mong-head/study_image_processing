@@ -14,14 +14,14 @@
 
 ## 1. single person
 
- <img src="attachment:de6c26ce-7e8a-4498-8771-b3ffe02b1648.png" alt="drawing" width="400"/>
+ <img src="https://user-images.githubusercontent.com/52481037/100755780-e41ac900-342f-11eb-85ec-ead21bcc8345.png" width="400"/>
 
  이미지 하나에 하나의 사람 있는 task (어렵지 않음)
  (x,y)로 표현 - 성능 bad
 
 ### 1-1.heatmap based
 
-![image.png](attachment:83cbdddc-d841-410f-8991-9bccc74f93ac.png)
+![image.png](https://user-images.githubusercontent.com/52481037/100756038-2a702800-3430-11eb-9ee1-d5c44cfabe88.png)
 
  히트맵 channel들 : 장마다 각각 관절이 있음
  
@@ -40,7 +40,7 @@
      --> 사람마다 channel만듦, maxium연산으로 나중에 합침
      
 
- <img src="attachment:a257b796-3a48-4c8a-baae-e4b7e7495222.png" alt="drawing" width="500"/>
+ <img src="https://user-images.githubusercontent.com/52481037/100756186-54c1e580-3430-11eb-8c37-5174e92aa114.png" width="500"/>
  
 ## 2. Multi-person
 
@@ -65,9 +65,9 @@ detection사용해서 사람있는 박스 찾기 -> 그 후 pose estimation
 
 encoding으로 이미지 줄이고, decoding으로 이미지 늘림 (인코더,디코더 모래시계형태)
 
-<img src="attachment:181da8ac-84bb-4589-8a69-34cd9fb8ea9b.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/52481037/100756337-7a4eef00-3430-11eb-9e51-2035a52baca4.png" width="500"/>
 
-<img src="attachment:750947d4-3731-4c41-99f6-3cddafd5efcb.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/52481037/100756377-86d34780-3430-11eb-9005-acd7403a0716.png" alt="drawing" width="500"/>
 
 
 피라미드 풀링과 유사한 형태
@@ -91,7 +91,8 @@ encoding으로 이미지 줄이고, decoding으로 이미지 늘림 (인코더,�
 * 예측 잘하는 편
 * opencv에도 있음
 
-![image.png](attachment:9807447c-22f6-4650-887e-a6d32a7296a4.png)
+![image](https://user-images.githubusercontent.com/52481037/100756426-95b9fa00-3430-11eb-9eec-8337029ce1d8.png)
+
 
     a) input image
     b) 모든 관절에 대해 히트맵으로 출력(누구의 것인지는 모름)
@@ -102,7 +103,7 @@ encoding으로 이미지 줄이고, decoding으로 이미지 늘림 (인코더,�
 
 * 구조 
  
- <img src="attachment:affac573-b045-42a2-b416-d974a0b5a4f9.png" alt="drawing" width="400"/>
+ <img src="https://user-images.githubusercontent.com/52481037/100756542-a23e5280-3430-11eb-93b2-ebcef51fcc70.png" alt="drawing" width="400"/>
 
     backbone : VGG19
 
@@ -119,7 +120,8 @@ encoding으로 이미지 줄이고, decoding으로 이미지 늘림 (인코더,�
 
 사람마다 그 사람이 있을법한 위치를 색깔로 구분 - 같은 색깔이면 같은 사람의 관절 - 이를 바탕으로 조립
 
-![image.png](attachment:15445c5f-5562-4eab-a44e-cd34abc92ffb.png)
+![image](https://user-images.githubusercontent.com/52481037/100756609-baae6d00-3430-11eb-97a3-846b3d70fba8.png)
+
 
 만든 사람 주장으로 잘 작동한다고 주장함
 
@@ -142,7 +144,7 @@ segmentation도 동시에 할 수 있음
 
 ### 2-3. 3D pose estimation
 
-![image.png](attachment:f582f387-49f9-459f-89d0-722f17a9e909.png)
+![image](https://user-images.githubusercontent.com/52481037/100756650-c7cb5c00-3430-11eb-9a50-f6043c21b186.png)
 
 (x,y,z)예측
 
@@ -159,7 +161,7 @@ top-down방식
 
 3D 좌표 히트맵 예측함 (heatmapss + Location maps)
 
-![image.png](attachment:a76f5152-6f6e-4e56-8507-b584f818e628.png)
+![image](https://user-images.githubusercontent.com/52481037/100756678-d0bc2d80-3430-11eb-827d-91863874cfa2.png)
 
 성능 : (예측y - 실제y)제곱후 root 값 사용(MPJPE) mm단위로 표현해줌
 
@@ -178,4 +180,9 @@ Pose estimation과 GAN을 사용한 retargeting결합
 - 실제 취할 수 있는 자세인지 모델링한 마네킹
 - 데이터 만드는데 이거 사용하기도 함
 
-![image.png](attachment:1aef8988-aaaf-495d-8c09-3836c5d59f03.png)
+![image](https://user-images.githubusercontent.com/52481037/100756718-db76c280-3430-11eb-8ed1-686ca750834a.png)
+
+
+# 실제 모델 사용 검색 키워드(github)
+1. HRNet : 성능
+2. blazePose : 속도
