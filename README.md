@@ -38,3 +38,11 @@ CNN 구현 : [CNN 구현](https://github.com/mong-head/study_image_processing/bl
 
 5. ResNet([ResNet 구현](https://github.com/mong-head/study_image_processing/blob/master/2_classification/make_net/make_resnet.ipynb)) : 층을 더 깊이 만들면서도 본래의 특징을 유지하는 방법, 요즘 대부분의 net은 resnet의 개념을 적용함
     * resnet도 여러 layer가 있지만, 34 layer 구현해봄
+    
+## 6. pose estimation ([pose_estimmation](https://github.com/mong-head/study_image_processing/tree/master/6_PoseEstimation))
+
+[pose estimation 전반적인 설명](https://github.com/mong-head/study_image_processing/blob/master/6_PoseEstimation/Pose_estimation%EC%84%A4%EB%AA%85.ipynb)
+
+[heatmap구현하기 : 가우시안](https://github.com/mong-head/study_image_processing/blob/master/6_PoseEstimation/PoseEstimation/make_gaussian_heatmap.ipynb)
+
+[]()
