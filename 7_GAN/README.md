@@ -65,8 +65,7 @@
 
 ### 2-1.DCGAN
 
-<img src="https://user-images.githubusercontent.com/52481037/100869762-d8d3a600-34e0-11eb-924c-890945a45668.png
-" width="600"/>
+<img src="https://user-images.githubusercontent.com/52481037/100877023-8f3c8880-34eb-11eb-9a7c-e6091e09619a.png" width="600"/>
 
 * generator : transposed convolution 적용해서 점점 높이와 너비를 넓혀가며 이미지 생성하는 모델
  * 기존 convolution : 이미지 사이즈 줄이는 식으로 학습 진행했음
