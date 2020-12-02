@@ -53,5 +53,25 @@ pose estimation 설명 : 위 링크의 readme참고
 - openpose정식버전은 feature extraction으로 VGG19사용하지만, lightweight버전은 더 가벼운 mobilenet을 backbone으로 사용함
 - 사용 결과
 
-   ![K-002](https://user-images.githubusercontent.com/52481037/100757783-1deccf00-3432-11eb-8b79-10f5edef67bc.jpg)
+   <img src="https://user-images.githubusercontent.com/52481037/100757783-1deccf00-3432-11eb-8b79-10f5edef67bc.jpg" width="300"/>
 
+## 7. GAN([GAN; 설명-readme확인](https://github.com/mong-head/study_image_processing/tree/master/7_GAN))
+
+[GAN 기본 구조 구현한 것 사용](https://github.com/mong-head/study_image_processing/tree/master/7_GAN/0_GAN)
+
+  * generator,discriminator모두 linear로만 이루어진 간단한 model이지만, 시간 많이 걸림(이미지 사이즈 늘려가는 generator때문인듯)
+  
+[DCGAN 구현 사용](https://github.com/mong-head/study_image_processing/tree/master/7_GAN/1_DCGAN)
+
+  * DCGAN완벽 구현은 아니지만 비슷하게 구현한 것 사용. conv로 이루어져 있어서 성능은 GAN보다 좋게 나오지만, 그말인 즉슨 시간은 훨씬 더 오래 걸림
+  
+[infoGAN 구현 사용](https://github.com/mong-head/study_image_processing/tree/master/7_GAN/2_InfoGAN) 
+
+  * condition 정보까지 있어서 조작이 가능한 infoGAN
+  * onlycat파일은 문제가 있어서, concat파일을 돌려봄
+  * 역시 시간 많이 걸림, 그만큼 성능은 보장
+
+#### result
+|GAN|DCGAN|infoGAN|
+|---|---|---|
+|![image1](https://github.com/mong-head/study_image_processing/blob/master/7_GAN/0_GAN/result/gen_105_100.png)|![image2](https://github.com/mong-head/study_image_processing/blob/master/7_GAN/1_DCGAN/gan.gif)|![image3](https://github.com/mong-head/study_image_processing/blob/master/7_GAN/2_InfoGAN/result/gen_9_140.png)|
