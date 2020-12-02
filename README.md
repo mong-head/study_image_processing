@@ -41,8 +41,17 @@ CNN 구현 : [CNN 구현](https://github.com/mong-head/study_image_processing/bl
     
 ## 6. pose estimation ([pose_estimmation](https://github.com/mong-head/study_image_processing/tree/master/6_PoseEstimation))
 
-[pose estimation 전반적인 설명](https://github.com/mong-head/study_image_processing/blob/master/6_PoseEstimation/Pose_estimation%EC%84%A4%EB%AA%85.ipynb)
+pose estimation 설명 : 위 링크의 readme참고
 
 [heatmap구현하기 : 가우시안](https://github.com/mong-head/study_image_processing/blob/master/6_PoseEstimation/PoseEstimation/make_gaussian_heatmap.ipynb)
+ - 관절위치 heatmap으로 어떻게 표현하는가(가우시안을 사용해서 표현할 수 있음)
+ 
+[openpose사용](https://github.com/mong-head/study_image_processing/blob/master/6_PoseEstimation/PoseEstimation/lightweight-human-pose_estimation/pose_demo.ipynb)
 
-[]()
+- bottom-up방식 사용함 : but 보통의 경우 top-down사용하니깐 나중에 top-down으로 해보기
+- heatmap(관절위치) + part affinity fields(조립시 필요한 부가정보 - 방향계산함)
+- openpose정식버전은 feature extraction으로 VGG19사용하지만, lightweight버전은 더 가벼운 mobilenet을 backbone으로 사용함
+- 사용 결과
+
+   ![K-002](https://user-images.githubusercontent.com/52481037/100757783-1deccf00-3432-11eb-8b79-10f5edef67bc.jpg)
+
