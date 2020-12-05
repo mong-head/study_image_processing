@@ -1,1 +1,4 @@
 *.exe filter=lfs diff=lfs merge=lfs -text
+. filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+'*-f.pt filter=lfs diff=lfs merge=lfs -text
