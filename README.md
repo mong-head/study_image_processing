@@ -75,3 +75,16 @@ pose estimation 설명 : 위 링크의 readme참고
 |GAN|DCGAN|infoGAN|
 |---|---|---|
 |![image1](https://github.com/mong-head/study_image_processing/blob/master/7_GAN/0_GAN/result/gen_105_100.png)|![image2](https://github.com/mong-head/study_image_processing/blob/master/7_GAN/1_DCGAN/gan.gif)|![image3](https://github.com/mong-head/study_image_processing/blob/master/7_GAN/2_InfoGAN/result/gen_9_140.png)|
+
+## 9. GAN2 ([GAN2; 설명은 readme](https://github.com/mong-head/study_image_processing/tree/master/9_GAN2))
+
+여러가지 GAN : pix2pix -> cyclegan -> singan, stylegan
+
+구현 : [styleGAN; 구현 무엇을 하였는지는 readme참고](https://github.com/mong-head/study_image_processing/tree/master/9_GAN2/stylegan2-pytorch)
+
+* 사람 얼굴 이미지 -> projection : 사람 얼굴 복원(latent뽑아냄) -> latent이용해서 다양한 것을 할 수 있음(나이 변경, 캐릭터화 등등)
+* result중 일부; 캐릭터화
+
+   |원본 이미지|projection(step 1500)|toonify|
+   |---|---|---|
+   |<img src="./9_GAN2/stylegan2-pytorch/toonify_images/suzy/example.jpg" width="100"/>|<img src="./9_GAN2/stylegan2-pytorch/toonify_images/suzy/example_01.png" width="100"/>|<img src="./9_GAN2/stylegan2-pytorch/toonify_images/suzy/example_01-toon.jpg" width="100"/>|
