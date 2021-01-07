@@ -1,4 +1,7 @@
 # study_image_processing
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 영상처리 공부 
 * jupyter notebook사용 (anaconda)
 * pytorch 사용
